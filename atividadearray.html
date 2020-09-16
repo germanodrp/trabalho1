@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    /*1) Elabore um algoritmo que leia 10 valores e tenha dois vetores um chamado de pares e outro
+de ímpares ao ler um valor coloque no veto correspondente de acordo com o valor. No fim
+imprime os dois vetores e mostre qual teve maior quantidade.*/
+
+/*var arrayPares = [];
+        var arrayImpares = [];
+        var valoratual=0;
+
+
+        for(var entrada=1; entrada <= 10; entrada++){
+             valoratual=parseInt ( window.prompt(` ${entrada} -  Digite o valor?`));
+
+
+             if (valoratual%2 == 0){
+                arrayPares.push(valoratual);
+
+             }
+
+             else{
+                 arrayImpares.push(valoratual);
+
+             }
+        } 
+
+        console.log (arrayPares);
+        console.log(arrayImpares);
+        
+        if(arrayPares.length > arrayImpares.length){
+            console.log(`Maior é o array de pares com ${arrayPares.length} valores`);
+        } else {
+            if(arrayPares.length < arrayImpares.length){
+            console.log(`Maior é o array de ímpares com ${arrayImpares.length} valores`);            
+            } else {
+                console.log(`Eles tem o mesmo tamanho ${arrayImpares.length}`);
+            }
+
+       } */
+
+
+      /* 2) Elabore um algoritmo que leia dois vetores de dez posições e faça a multiplicação dos
+elementos de mesmo índice, colocando o resultado em um terceiro vetor, que deve ser
+mostrado como saída.*/
+
+     /*   var arrayvetor1 =[];
+        var arrayvetor2=[];
+       var vetoResultante =[];
+       var valoratual=0;
+
+        for(var entradaArrayvetor1=0; entradaArrayvetor1<= 9; entradaArrayvetor1++){
+             valoratual=parseInt ( window.prompt(` ${entradaArrayvetor1} -  Digite o valor 1?`));
+            arrayvetor1.push(valoratual)    ;
+
+         
+        } 
+        console.log(arrayvetor1);
+        for(var entradaArrayvetor2=0; entradaArrayvetor2<= 9; entradaArrayvetor2++){
+             valoratual=parseInt ( window.prompt(` ${entradaArrayvetor2} -  Digite o valor 2?`));
+            arrayvetor2.push(valoratual)    ;
+
+         
+        } 
+        console.log(arrayvetor2);
+         for (var posicao=0;posicao<=9;posicao++){
+            vetoResultante.push(arrayvetor1[posicao] * arrayvetor2[posicao]);
+        }
+        console.log(vetoResultante);
+*/
+
+
+         
+        
+
+
+     /*  3) Ler 2 vetores, R de 5 elementos e S de 10 elementos. Gere um vetor X que possua os
+elementos comuns a R e a S. Considere que no mesmo vetor não haverá números repetidos.
+Escrever o vetor X*/
+
+
+
+var vetorR=[];
+var vetorS=[];
+var vetorInterseccao=[];
+var valoratual=0;
+
+for(var entradavetorR=0; entradavetorR<= 4; entradavetorR++){
+             valoratual=parseInt ( window.prompt(` ${entradavetorR} -  Digite o valor de vetorR 1?`));
+          vetorR.push(valoratual);
+}
+console.log(vetorR)
+
+for(var entradaVetorS=0; entradaVetorS<= 9; entradaVetorS++){
+             valoratual=parseInt ( window.prompt(` ${entradaVetorS} -  Digite o valor de vetorS ?`));
+          vetorS.push(valoratual);
+}
+console.log(vetorS)
+for (var posicaoR=0;posicaoR<=4;posicaoR++){
+        for (var posicaoS=0;posicaoS<=9;posicaoS++){
+
+                if (vetorR[posicaoR] === vetorS[posicaoS]) {
+                    vetorInterseccao.push(vetorR[posicaoR])
+             }
+          }
+        }
+        console.log(vetorInterseccao)
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
